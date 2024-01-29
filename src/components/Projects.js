@@ -1,7 +1,7 @@
 import { Col, Row, Container, Tab, Nav } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/food-truck-icon-for-your-website-design-logo-app-ui-free-vector.jpg";
+import projImg2 from "../assets/img/booksnbuck-logo.png";
+import projImg3 from "../assets/img/artistifylogo.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCard";
 
@@ -22,30 +22,18 @@ export const Projects = () => {
             description: "Design & Development",
             imgUrl: projImg3,
           },
-          {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
-          },
-          {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-          },
-          {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-          },
     ];
 
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>
+                            Here are some projects that I've worked on in the past.
+                            I find myself taking on different roles whether it be in Full Stack, Backend, or Mobile Development.
+                        </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -60,7 +48,7 @@ export const Projects = () => {
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                <Row>
+                                <Row className="align-items-stretch">
                                     {
                                     projects.map((project, index) => {
                                         return (
